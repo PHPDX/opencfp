@@ -2,8 +2,7 @@
 {% block content %}
   <div class="opencfp-login">
     <a class="font-serif flex items-center justify-center mb-4" href="{{ url('homepage') }}">
-      <img class="w-10 mr-2" src="{{ assets('img/logo.svg') }}" alt="OpenCFP">
-      <h1 class="font-normal text-white m-0">Open<span class="text-brand font-bold">CFP</span></h1>
+      <img class="mr-2" style="background-color:white;padding:1em;border-radius:0.3em;" src="{{ assets('img/logo.svg') }}" alt="Cascadia PHP">
     </a>
 
     {% include "_flash.twig" %}
@@ -17,6 +16,6 @@
       <button type="submit" class="btn btn-brand w-full">Login</button>
     </form>
 
-    <p class="text-light text-center text-sm my-4">New user? <a href="{{ url('user_new') }}" class="text-brand text-bold">Signup Now</a></p>
+    <p class="text-light text-center text-sm my-4">New user? <a href="{{ url('user_new') }}" style="color:white;text-decoration:underline" class="text-bold">Signup Now</a></p>
   </div>
 {% endblock %}
