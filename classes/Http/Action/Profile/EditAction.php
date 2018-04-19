@@ -82,7 +82,7 @@ final class EditAction
             'speaker_info'   => $speakerData['info'],
             'speaker_bio'    => $speakerData['bio'],
             'speaker_photo'  => $speakerData['photo_path'],
-            'preview_photo'  => $this->path->uploadPath() . $speakerData['photo_path'],
+            'preview_photo'  => '/uploads/' . $speakerData['photo_path'],
             'airport'        => $speakerData['airport'],
             'transportation' => $speakerData['transportation'],
             'hotel'          => $speakerData['hotel'],
